@@ -24,30 +24,30 @@ const animation = keyframes`
 `
 
 const Wrapper = styled.span`
-        display: inline-block;
-        flex-direction: row;
-        font-weight: bold;
+  display: inline-block;
 
-    span {
-        animation-name: ${animation};
-        animation-duration: 6s;
-        animation-fill-mode: forwards;
-        animation-iteration-count: infinite;
-        animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-    }
-    span:nth-child(1) {
-        animation-delay: 0.1s:
-    }
-    span:nth-child(2) {
-        animation-delay: 0.2s:
-    }
-    span:nth-child(3) {
-        animation-delay: 0.3s:
-    }
-    span:nth-child(4) {
-        animation-delay: 0.4s:
-    }
-    span:nth-child(5) {
-        animation-delay: 0.5s:
-    }
+  span {
+    opacity: 0;
+    display: inline-block;
+    animation-name: ${animation};
+    animation-duration: 6s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+  }
+  span:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+  span:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  span:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+  span:nth-child(4) {
+    animation-delay: 0.4s;
+  }
+  span:nth-child(5) {
+    animation-delay: 0.5s;
+  }
 `
